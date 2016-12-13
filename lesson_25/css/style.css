@@ -1,0 +1,38 @@
+.flex-container, .box {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;	
+  background-color: #B7AFA3;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-align-items: center;
+  align-items: center;
+}
+.box {
+  width: 15%;
+  text-align: center;
+  height: 40%;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.div-1 {
+  background-color: #E8D0A9;
+}
+.div-2 {
+  background-color: #C1DAD6;
+}
+.div-3 {
+  background-color: #F5FAFA;
+}
+.div-4 {
+  background-color: #ACD1E9;
+}
+.div-5 {
+  background-color: #6D929B;
+}
