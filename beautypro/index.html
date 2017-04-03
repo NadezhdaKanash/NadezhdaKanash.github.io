@@ -13,6 +13,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fotorama.css"/>
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet"> 
@@ -29,15 +30,15 @@
 	<header id = "main">
 		  	<div class="container shadow">
 		  		<div class="row main">
-		  			<div class="col-lg-3 col-md-3 col-xs-12 main_logo">
+		  			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 main_logo">
 		  				<a href="#"><img src="img/logo.png" alt="logo"></a>
 		  			</div>
-		  			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 main_info">
+		  			<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12 main_info">
 		  				<div class="row main_info_short">
 		  					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 main_info_short_phone">
 		  						<p>+ 375 (33) 677 70 90 - MTC</p>
 		  						<p>+ 375 (29) 346 27 77 - Velcom</p>
-		  						<a href="#"><i class="fa fa-phone"></i>Заказать бесплатный звонок</a>
+		  						<a href="#" class = "order_call"><i class="fa fa-phone"></i>Заказать бесплатный звонок</a>
 		  					</div>
 		  					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 main_info_short_time">
 		  						<p>Пн - Пт  с 9:00 до 19:00</p>
@@ -62,27 +63,34 @@
 						<p class = "main_basket_quantity">Товаров&nbsp;&nbsp;  <span class = "main_basket_number">2</span></p>
 						<p class = "main_basket_quantity">На&nbsp;&nbsp;  <span class = "main_basket_number">50.6</span> &nbsp;&nbsp;руб.</p>
 		  				</a>
+		  				<div class="clear"></div>
 		  			</div>
+
+		  			<!-- menu-burger -->
+		  			<div class="main_nav">
+		  			  <a href="#" class="main_nav_bar">
+		  			  	<p>Меню</p>
+		  			    <span class="line"></span>
+		  			  </a>
+		  			  <div class="clear"></div>
+		  			  <a href="#" class="close_nav">
+		  			  	<p>Меню</p>
+		  			    <span>&times;</span>
+		  			  </a>
+		  			  <div class="clear"></div>
+		  			</div>
+		  			<!-- /burger -->
 		  		</div><!-- /row -->
 
-		  		<!-- menu-burger -->
-		  		<div class="main_nav">
-		  		  <a href="#" class="main_nav_bar">
-		  		    <span class="line"></span>
-		  		  </a>
-		  		  <a href="#" class="close_nav">
-		  		    <span>&times;</span>
-		  		  </a>
-		  		</div>
-		  		<!-- /burger -->
+
 		  		<div class="row main_menu">
 		  			<div class="col-lg-12 col-xs-12">
 		  				<ul class = "no_padding">
-		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center">Каталог</a></li>
-		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center">Акции и скидки</a></li>
-		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center">Оплата и доставка</a></li>
-		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center">Контакты</a></li>
-		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center">Мастер-классы</a></li>
+		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Каталог</p></a></li>
+		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Акции и скидки</p></a></li>
+		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Оплата и доставка</p></a></li>
+		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Контакты</p></a></li>
+		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Мастер-классы <span>и обучение</span></p></a></li>
 		  				</ul>
 		  			<div class="clear"></div>		
 		  			</div>
@@ -90,17 +98,43 @@
 
 		  	</div>
 		</header>
-
 		
 		<div class="content container shadow">
+				
 				<div class="row">
-					<div class="col-lg-12 content_padding"></div>
-					<div class="col-lg-12 content_picture">
-						<div class="col-lg-6 col-md-6 col-xs-6 content_description">
-							<h1 class="content_description_text">интернет-магазин профессиональной косметики для волос и ногтей</h1>
+					<div class="first_screen">
+						<div class="col-lg-3 col-md-3 col-sm-4 category">
+							<ul>
+								<li class="category_name">категории</li>
+								<li class="category_item"><a href="#">GALAXY collection</a></li>
+								<li class="category_item"><a href="#">3D collection</a></li>
+								<li class="category_item"><a href="#">3D FOIL + collection</a></li>
+								<li class="category_item"><a href="#">METALLIC collection</a></li>
+								<li class="category_item"><a href="#">METALLIC Pedicure collection</a></li>
+								<li class="category_item"><a href="#">STRETCH collection</a></li>
+								<li class="category_item"><a href="#">WHITE collection</a></li>
+								<li class="category_item"><a href="">VOLUME collection (трафареты)</a></li>
+								<li class="category_item"><a href="#">Слайдер-дизайны Fashion Nails</a></li>
+								<li class="category_item"><a href="#">Альбомы для слайдер-дизайнов</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-8 slider">
+							<div class="fotorama"
+										data-autoplay="true"
+										data-autoplay="1500"
+										data-stopautoplayontouch="false"
+										>
+							  <img src="img/fotorama/slide1.jpg">
+							  <img src="img/fotorama/slide2.jpg">
+							  <img src="img/fotorama/slide3.jpg">
+							  <img src="img/fotorama/slide4.jpg">
+							  <img src="img/fotorama/slide5.jpg">
+							</div>
 						</div>
 					</div>
 				</div><!-- /row -->
+				
+				<!-- action -->
 				<section id="action-and-sale">
 					<div class="row">
 							<div class="col-lg-10 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 col-lg-offset-1 main_sale">
@@ -133,13 +167,13 @@
 									<div class="row text-center popular_slider">
 											<div class="popular_goods_item" id="popular_goods_item_1">
 												<div class="popular_goods_item_bgck">
-													<img src="img/goods/2017-02-18_23-16-16.png" alt='Блеск-шампунь для волос Kapous "Brilliants gloss", 250 мл.' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr">Блеск-шампунь для волос Kapous "Brilliants gloss", 250 мл.</p>
+													<img src="img/goods/G3-600x400.jpg" alt='Слайдер дизайн Galaxy #3' class="popular_goods_item_img">
+													<p class="popular_goods_item_descr text-center">Слайдер дизайн Galaxy #3</p>
 													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>10.64</span> руб.</p>
+														<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
 														<p class="popular_goods_item_sale">- 5%</p>
 														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>11.20</span> руб.</p>
+														<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
 													</div>
 													<a href="#" class = "popular_goods_item_more"></a>
 												</div>
@@ -147,13 +181,13 @@
 											</div><!-- /item -->
 											<div class="popular_goods_item" id="popular_goods_item_2">
 												<div class="popular_goods_item_bgck">
-													<img src="img/goods/2017-02-17_23-11-28.png" alt='Блеск-шампунь для волос Kapous "Brilliants gloss", 250 мл.' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr">Шампунь для кудрявых волос Kapous серии "Smooth and Curly", 300 мл.</p>
+													<img src="img/goods/P2-700x330.jpg" alt='Слайдер дизайн FN Metallic Pedicure #P2' class="popular_goods_item_img">
+													<p class="popular_goods_item_descr">Слайдер дизайн FN Metallic Pedicure #P2</p>
 													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>8.46</span> руб.</p>
+														<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
 														<p class="popular_goods_item_sale">- 5%</p>
 														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>8.90</span> руб.</p>
+														<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
 														<a href="#" class = "popular_goods_item_more"></a>
 													</div>
 												</div>
@@ -161,13 +195,13 @@
 											</div><!-- /item -->
 											<div class="popular_goods_item" id="popular_goods_item_3">
 												<div class="popular_goods_item_bgck">
-													<img src="img/goods/2017-02-17_23-16-07.png" alt='Блеск-шампунь для волос Kapous "Brilliants gloss", 250 мл.' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr">Шампунь для прямых волос Kapous серии "Smooth and Curly", 300 мл.</p>
+													<img src="img/goods/3д19-600x400.jpg" alt='Слайдер дизайн FN 3D FOIL#19' class="popular_goods_item_img">
+													<p class="popular_goods_item_descr">Слайдер дизайн FN 3D FOIL#19</p>
 													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>8.27</span> руб.</p>
+														<p class="popular_goods_item_current_price"><span>4.14</span> руб.</p>
 														<p class="popular_goods_item_sale">- 5%</p>
 														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>8.70</span> руб.</p>
+														<p class="popular_goods_item_prev_price"><span>4.36</span> руб.</p>
 													</div>
 													<a href="#" class = "popular_goods_item_more"></a>
 												</div>
@@ -175,13 +209,13 @@
 											</div><!-- /item -->
 											<div class="popular_goods_item" id="popular_goods_item_4">
 												<div class="popular_goods_item_bgck">
-													<img src="img/goods/2017-02-17_23-11-28.png" alt='Блеск-шампунь для волос Kapous "Brilliants gloss", 250 мл.' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr">Шампунь для кудрявых волос Kapous серии "Smooth and Curly", 300 мл.</p>
+													<img src="img/goods/G6-600x400.jpg" alt='Слайдер дизайн Galaxy #6' class="popular_goods_item_img">
+													<p class="popular_goods_item_descr"><span>Слайдер дизайн Galaxy #6</span> #6</s></p>
 													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>8.46</span> руб.</p>
+														<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
 														<p class="popular_goods_item_sale">- 5%</p>
 														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>8.90</span> руб.</p>
+														<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
 														<a href="#" class = "popular_goods_item_more"></a>
 													</div>
 												</div>
@@ -189,13 +223,13 @@
 											</div><!-- /item -->
 											<div class="popular_goods_item" id="popular_goods_item_5">
 												<div class="popular_goods_item_bgck">
-													<img src="img/goods/2017-02-17_23-16-07.png" alt='Блеск-шампунь для волос Kapous "Brilliants gloss", 250 мл.' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr">Шампунь для прямых волос Kapous серии "Smooth and Curly", 300 мл.</p>
+													<img src="img/goods/M9-600x400.jpg" alt='Слайдер дизайн FN Metallic #9' class="popular_goods_item_img">
+													<p class="popular_goods_item_descr">Слайдер дизайн FN Metallic #9</p>
 													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>8.27</span> руб.</p>
+														<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
 														<p class="popular_goods_item_sale">- 5%</p>
 														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>8.70</span> руб.</p>
+														<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
 													</div>
 													<a href="#" class = "popular_goods_item_more"></a>
 												</div>
@@ -206,38 +240,6 @@
 								</div>
 							</div><!-- /row -->
 						</section>
-
-						<section id="brands">
-							<div class="row">
-									<div class="col-lg-10 col-lg-offset-1 brands">
-										<div class="row">
-											<h2 class="brands_name text-center">Бренды</h2>
-										</div>
-
-										<div class="row">
-											<div class="brands_slider col-lg-12">
-											  <div class = "brands_slider_item">
-											  	<a href="#"><img src="img/brands/constant_delight.jpg" alt="Constant Delight" class = "brands_slider_item_img"></a>
-											  </div>
-											  <div class = "brands_slider_item">
-											  	<a href="#"><img src="img/brands/kapous.jpg" alt="Kapous" class = "brands_slider_item_img"></a>
-											  </div>
-											  <div class = "brands_slider_item">
-											  	<a href="#"><img src="img/brands/tnl.jpg" alt="TNL Professional" class = "brands_slider_item_img"></a>
-											  </div>
-											  <div class = "brands_slider_item">
-											  	<a href="#"><img src="img/brands/kapous.jpg" alt="Kapous" class = "brands_slider_item_img"></a>
-											  </div>
-											  <div class = "brands_slider_item">
-											  	<a href="#"><img src="img/brands/constant_delight.jpg" alt="Constant Delight" class = "brands_slider_item_img"></a>
-											  </div>
-											</div>
-										</div><!-- /row -->
-									</div>
-								</div><!-- /row -->
-							</section>
-
-
 
 		</div><!-- /content -->
 	
@@ -290,13 +292,49 @@
 				</div>
 			</footer>
 
+			<!-- POPUPS -->
+
+			<!-- Заказать бесплатный звонок -->
+			<div class="call_free_background">
+			</div>
+			<div class="call_free" id = "call_free">
+				<form action="#" id="call_free_form">
+					<input type = "hidden" name = "from" value = "Заказать бесплатный звонок">
+					<p>Оставьте <span>имя</span> и <span>телефон</span>, и мы обязательно с Вами свяжемся</p>
+					<div class="call_free_form_border">
+						<label for = "call_free_form_name" class = "call_free_form_label" id = "call_free_form_name_label">
+							<img src="img/call-free-form-user.png" alt="user name">
+						</label>
+						<input id = "call_free_form_name" class = "call_free_form_input" type="text" name = "call_free_form_name" placeholder="Имя" required>
+					</div>
+					<br>
+					<div class="call_free_form_border">
+						<label for="call_free_form_phone" class = "call_free_form_label" id = "call_free_form_phone_label">
+							<img src="img/call-free-form-phone.png" alt="user phone">
+						</label>
+						<input id = "call_free_form_phone" class = "call_free_form_input" type="text" name = "call_free_form_phone" placeholder = "Телефон" required>
+					</div>
+					<br>
+					<button class="call_free_form_send">Оставить</button>
+				</form>
+				<button class="call_free_close" id = "call_free_close_form"><p>&times;</p></button>
+			</div>
+
+			<!-- Данные успешно оправлены -->
+			<div class="call_free" id = "call_free_thanks">
+				<form action="#" id="call_free_form_thanks">
+					<p class = "text-center call_free_thanks_text">Данные успешно отправлены.</p> 
+					<p class = "text-center call_free_thanks_text">Мы с Вами свяжемся <span>в ближайшее время</span></p>
+					<button class="call_free_form_send" id = "call_free_close_thanks">Закрыть</button>
+				</form>
+				</div>
 		
 		    <!-- scripts -->
 		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		    <script src="js/bootstrap.min.js"></script>
 		    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		    <script type="text/javascript" src="slick/slick.min.js"></script>
-
+				<script type="text/javascript" src="js/fotorama.js"></script>
 
 		    <!-- Показать/скрыть главное меню -->
         <script>
@@ -317,6 +355,45 @@
             })
           })
         </script>
+
+        <!-- Показать/скрыть окно "Заказать звонок" -->
+				<script>
+					$(document).ready(function() {
+					  var $nav = $('a.order_call');
+					  $nav.click(function() {
+					  	$('.call_free_background').fadeIn();
+					    $('#call_free').fadeIn();
+					   })
+					  $('#call_free_close_form').click(function() {
+					    $('#call_free').hide();
+					    $('.call_free_background').hide();
+					  })
+					  $('#call_free_close_thanks').click(function() {
+					    $('#call_free_thanks').hide();
+					    $('.call_free_background').hide();
+					  })
+					})
+				</script>
+
+				<!-- Отправка формы "Заказать звонок" -->
+				<script>
+				  $(document).ready(function() {
+				      $("#call_free_form").submit(function() {
+				        $.ajax({
+				    		type: "POST",
+				    		url: "mail.php",
+				    		data: $(this).serialize()
+				        }).done(function() {
+				    			$(this).find("input").val("");
+				    			$('#call_free_thanks').fadeIn();
+				    			$('#call_free').hide();
+				    			$("#call_free_form").trigger("reset");
+				        });
+				        return false;
+				      });
+				    });
+				  </script>
+
 		    <!-- popular_slider -->
 		    <script type="text/javascript">
 		        $(document).ready(function(){
