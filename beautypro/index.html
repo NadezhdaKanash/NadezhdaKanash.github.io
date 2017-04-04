@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>BeautyPro</title>
+    <title>Каталог</title>
 
     <!-- styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -86,7 +86,7 @@
 		  		<div class="row main_menu">
 		  			<div class="col-lg-12 col-xs-12">
 		  				<ul class = "no_padding">
-		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Каталог</p></a></li>
+		  					<li class="main_menu_item pull-left now"><a href="#" class = "text-center"><p>Каталог</p></a></li>
 		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Акции и скидки</p></a></li>
 		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Оплата и доставка</p></a></li>
 		  					<li class="main_menu_item pull-left"><a href="#" class = "text-center"><p>Контакты</p></a></li>
@@ -102,11 +102,21 @@
 		<div class="content container shadow">
 				
 				<div class="row">
-					<div class="first_screen">
+					<div class="col-lg-12 col-xs-12">
+						<div class="catalogue_breadcrubs">
+							<a href="#" class="catalogue_breadcrubs_item">Каталог</a>
+							<span>&nbsp;>&nbsp;</span>
+							<a href="#" class="catalogue_breadcrubs_item now">GALAXY collection</a>
+						</div>
+					</div>
+				</div><!-- /row -->
+
+				<div class="row category_column">
+					
 						<div class="col-lg-3 col-md-3 col-sm-4 category">
 							<ul>
 								<li class="category_name">категории</li>
-								<li class="category_item"><a href="#">GALAXY collection</a></li>
+								<li class="category_item now"><a href="#">GALAXY collection</a></li>
 								<li class="category_item"><a href="#">3D collection</a></li>
 								<li class="category_item"><a href="#">3D FOIL + collection</a></li>
 								<li class="category_item"><a href="#">METALLIC collection</a></li>
@@ -118,128 +128,163 @@
 								<li class="category_item"><a href="#">Альбомы для слайдер-дизайнов</a></li>
 							</ul>
 						</div>
-						<div class="col-lg-9 col-md-9 col-sm-8 slider">
-							<div class="fotorama"
-										data-autoplay="true"
-										data-autoplay="2500"
-										data-stopautoplayontouch="false"
-										>
-							  <img src="img/fotorama/slide1.jpg">
-							  <img src="img/fotorama/slide2.jpg">
-							  <img src="img/fotorama/slide3.jpg">
-							  <img src="img/fotorama/slide4.jpg">
-							  <img src="img/fotorama/slide5.jpg">
-							</div>
-						</div>
-					</div>
-				</div><!-- /row -->
-				
-				<!-- action -->
-				<section id="action-and-sale">
-					<div class="row">
-							<div class="col-lg-10 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 col-lg-offset-1 main_sale">
-								<div class="row">
-									<h2 class="main_sale_name text-center">Акции и скидки</h2>
-								</div>
-								<div class="row main_sale_bgck">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no_padding main_sale_img_wrapper">
-									</div>
-									<div class="col-lg-6  col-md-6 col-sm-6 col-xs-12 no_padding text-center main_sale_message">
-										<p class="main_sale_value">-5%</p>
-										<hr class ="main_sale_title_line">
-										<p class="main_sale_title">скидка</p>
-										<p class="main_sale_text">первым 30 покупателям</p>
-										<p class="main_sale_text_descr">уже купили <span>16</span></p>
-										<a class="main_sale_button" href="#">выбрать товар</a>
-									</div>
-								</div>
-							</div>
-						</div><!-- /row -->
-					</section>
 
-					<section id="popular_goods">
-						<div class="row">
-							<div class="col-lg-10 col-lg-offset-1 popular">
-									<div class="row">
-										<h2 class="popular_name text-center">Популярные товары</h2>
-									</div>
-									
-									<div class="row text-center popular_slider">
-											<div class="popular_goods_item" id="popular_goods_item_1">
-												<div class="popular_goods_item_bgck">
-													<img src="img/goods/G3-600x400.jpg" alt='Слайдер дизайн Galaxy #3' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr text-center">Слайдер дизайн Galaxy #3</p>
-													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
-														<p class="popular_goods_item_sale">- 5%</p>
-														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
-													</div>
-													<a href="#" class = "popular_goods_item_more"></a>
-												</div>
-												<a href="#" class="popular_goods_item_button">В корзину</a>
-											</div><!-- /item -->
-											<div class="popular_goods_item" id="popular_goods_item_2">
-												<div class="popular_goods_item_bgck">
-													<img src="img/goods/P2-700x330.jpg" alt='Слайдер дизайн FN Metallic Pedicure #P2' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr">Слайдер дизайн FN Metallic Pedicure #P2</p>
-													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
-														<p class="popular_goods_item_sale">- 5%</p>
-														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
-														<a href="#" class = "popular_goods_item_more"></a>
-													</div>
-												</div>
-												<a href="#" class="popular_goods_item_button">В корзину</a>
-											</div><!-- /item -->
-											<div class="popular_goods_item" id="popular_goods_item_3">
-												<div class="popular_goods_item_bgck">
-													<img src="img/goods/3д19-600x400.jpg" alt='Слайдер дизайн FN 3D FOIL#19' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr">Слайдер дизайн FN 3D FOIL#19</p>
-													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>4.14</span> руб.</p>
-														<p class="popular_goods_item_sale">- 5%</p>
-														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>4.36</span> руб.</p>
-													</div>
-													<a href="#" class = "popular_goods_item_more"></a>
-												</div>
-												<a href="#" class="popular_goods_item_button">В корзину</a>
-											</div><!-- /item -->
-											<div class="popular_goods_item" id="popular_goods_item_4">
-												<div class="popular_goods_item_bgck">
-													<img src="img/goods/G6-600x400.jpg" alt='Слайдер дизайн Galaxy #6' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr"><span>Слайдер дизайн Galaxy #6</span> #6</s></p>
-													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
-														<p class="popular_goods_item_sale">- 5%</p>
-														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
-														<a href="#" class = "popular_goods_item_more"></a>
-													</div>
-												</div>
-												<a href="#" class="popular_goods_item_button">В корзину</a>
-											</div><!-- /item -->
-											<div class="popular_goods_item" id="popular_goods_item_5">
-												<div class="popular_goods_item_bgck">
-													<img src="img/goods/M9-600x400.jpg" alt='Слайдер дизайн FN Metallic #9' class="popular_goods_item_img">
-													<p class="popular_goods_item_descr">Слайдер дизайн FN Metallic #9</p>
-													<div class="popular_goods_item_price">
-														<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
-														<p class="popular_goods_item_sale">- 5%</p>
-														<div class="clear"></div>
-														<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
-													</div>
-													<a href="#" class = "popular_goods_item_more"></a>
-												</div>
-												<a href="#" class="popular_goods_item_button">В корзину</a>
-											</div><!-- /item -->
-									</div>
-									
+						<div class="col-lg-9 col-md-9 col-sm-8 goods">
+							
+							<div class="row">
+								<div class="col-lg-12 col-xs-12">
+									<h1 class="category_name">GALAXY collection</h1>
 								</div>
-							</div><!-- /row -->
-						</section>
+							</div> <!-- /row -->
+						
+						<div class="row">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+									<div class="goods_quantity">
+										<label for="goods_quantity_show" class = "goods_quantity_title">Показать:</label>
+										<select name="goods_quantity_show" id="goods_quantity_show" class = "goods_quantity_show">
+											<option class = "ok" value="6">6</option>
+											<option value="24">24</option>
+											<option value="48">48</option>
+											<option value="all">Все</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div class="goods_filter">
+										<label for="goods_filter_show" class = "goods_filter_title">Сортировать по: </label>
+										<select name="goods_filter_show" id="goods_filter_show" class = "goods_filter_show">
+											<option value="6">по умолчанию</option>
+											<option value="24">названию</option>
+											<option value="48">цене (низкая > высокая)</option>
+											<option value="all">скидке</option>
+										</select>
+									</div>
+								</div>
+							</div>	
+
+							<div class="row">
+
+								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div class="popular_goods_item" id="popular_goods_item_1">
+										<div class="popular_goods_item_bgck">
+											<img src="img/galaxy/G1-600x400.jpg" alt='Слайдер дизайн Galaxy #1' class="popular_goods_item_img">
+											<p class="popular_goods_item_descr text-center">Слайдер дизайн Galaxy #1</p>
+											<div class="popular_goods_item_price">
+												<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
+												<p class="popular_goods_item_sale">- 5%</p>
+												<div class="clear"></div>
+												<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
+											</div>
+											<a href="#" class = "popular_goods_item_more"></a>
+										</div>
+										<a href="#" class="popular_goods_item_button">В корзину</a>
+									</div><!-- /item -->
+								</div>
+
+								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div class="popular_goods_item" id="popular_goods_item_2">
+										<div class="popular_goods_item_bgck">
+											<img src="img/galaxy/G2-600x400.jpg" alt='Слайдер дизайн Galaxy #2' class="popular_goods_item_img">
+											<p class="popular_goods_item_descr text-center">Слайдер дизайн Galaxy #2</p>
+											<div class="popular_goods_item_price">
+												<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
+												<p class="popular_goods_item_sale">- 5%</p>
+												<div class="clear"></div>
+												<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
+											</div>
+											<a href="#" class = "popular_goods_item_more"></a>
+										</div>
+										<a href="#" class="popular_goods_item_button">В корзину</a>
+									</div><!-- /item -->
+								</div>
+							
+								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div class="popular_goods_item" id="popular_goods_item_3">
+										<div class="popular_goods_item_bgck">
+											<img src="img/goods/G3-600x400.jpg" alt='Слайдер дизайн Galaxy #3' class="popular_goods_item_img">
+											<p class="popular_goods_item_descr text-center">Слайдер дизайн Galaxy #3</p>
+											<div class="popular_goods_item_price">
+												<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
+												<p class="popular_goods_item_sale">- 5%</p>
+												<div class="clear"></div>
+												<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
+											</div>
+											<a href="#" class = "popular_goods_item_more"></a>
+										</div>
+										<a href="#" class="popular_goods_item_button">В корзину</a>
+									</div><!-- /item -->
+								</div>
+							
+								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div class="popular_goods_item" id="popular_goods_item_4">
+										<div class="popular_goods_item_bgck">
+											<img src="img/galaxy/G4-600x400.jpg" alt='Слайдер дизайн Galaxy #4' class="popular_goods_item_img">
+											<p class="popular_goods_item_descr text-center">Слайдер дизайн Galaxy #4</p>
+											<div class="popular_goods_item_price">
+												<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
+												<p class="popular_goods_item_sale">- 5%</p>
+												<div class="clear"></div>
+												<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
+											</div>
+											<a href="#" class = "popular_goods_item_more"></a>
+										</div>
+										<a href="#" class="popular_goods_item_button">В корзину</a>
+									</div><!-- /item -->
+								</div>
+							
+								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div class="popular_goods_item" id="popular_goods_item_5">
+										<div class="popular_goods_item_bgck">
+											<img src="img/galaxy/G5-600x400.jpg" alt='Слайдер дизайн Galaxy #5' class="popular_goods_item_img">
+											<p class="popular_goods_item_descr text-center">Слайдер дизайн Galaxy #5</p>
+											<div class="popular_goods_item_price">
+												<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
+												<p class="popular_goods_item_sale">- 5%</p>
+												<div class="clear"></div>
+												<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
+											</div>
+											<a href="#" class = "popular_goods_item_more"></a>
+										</div>
+										<a href="#" class="popular_goods_item_button">В корзину</a>
+									</div><!-- /item -->
+								</div>
+							
+								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div class="popular_goods_item" id="popular_goods_item_6">
+										<div class="popular_goods_item_bgck">
+											<img src="img/galaxy/G6-600x400.jpg" alt='Слайдер дизайн Galaxy #6' class="popular_goods_item_img">
+											<p class="popular_goods_item_descr text-center">Слайдер дизайн Galaxy #6</p>
+											<div class="popular_goods_item_price">
+												<p class="popular_goods_item_current_price"><span>2.23</span> руб.</p>
+												<p class="popular_goods_item_sale">- 5%</p>
+												<div class="clear"></div>
+												<p class="popular_goods_item_prev_price"><span>2.35</span> руб.</p>
+											</div>
+											<a href="#" class = "popular_goods_item_more"></a>
+										</div>
+										<a href="#" class="popular_goods_item_button">В корзину</a>
+									</div><!-- /item -->
+								</div>
+							
+
+
+							</div><!-- row -->
+							<div class="row">
+								<div class="col-lg-12 col-xs-12">
+									<div class="goods_pagination">
+										<a href="#" class="goods_pagination_item now">1</a>
+										<a href="#" class="goods_pagination_item">2</a>
+										<a href="#" class="goods_pagination_item">3</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					
+			</div><!-- /row -->
+				
+				
 
 		</div><!-- /content -->
 	
