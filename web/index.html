@@ -1,0 +1,371 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio a Personal Category Flat Bootstarp responsive Website Template| Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Portfolio  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+</script>
+<!----webfonts--->
+<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,300,600,500,900,700,100,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<!---//webfonts--->
+<!------ light-box-script ----->
+<script src="js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+<script type="text/javascript" charset="utf-8">
+	$(function() {
+		$('.about-grid a').Chocolat({linkImages:false});
+	});
+</script>
+<!------ light-box-script ----->
+</head>
+<body>	
+	<!-- container -->
+		<!-- header -->
+		<div id="home" class="header">
+			<div class="container">
+				<!-- -->
+				<div class="nav-icon">
+					 <a href="#" class="right_bt" id="activator"><span> </span> </a>
+				</div>
+				 <div class="box" id="box">
+					 <div class="box_content">        					                         
+						<div class="box_content_center">
+						 	<div class="form_content">
+								<div class="menu_box_list">
+									<ul>
+										<li><a class="scroll" href="#home">Главная</a></li>
+										<li><a class="scroll" href="#about">Обо мне</a></li>
+										<li><a class="scroll" href="#services">Услуги</a></li>
+										<li><a class="scroll" href="#payment">Способы оплаты</a></li>
+										<li><a class="scroll" href="#contact">Контакты</a></li>
+										<div class="clear"> </div>
+									</ul>
+								</div>
+								<a class="boxclose" id="boxclose"> <span> </span></a>
+							</div>                                  
+						</div> 	
+					</div> 
+				</div>    
+				<!-- script-for-box -->
+				 <script type="text/javascript">
+					var $ = jQuery.noConflict();
+						$(function() {
+							$('#activator').click(function(){
+								$('#box').animate({'top':'0px'},500);
+							});
+							$('#boxclose').click(function(){
+							$('#box').animate({'top':'-700px'},500);
+							});
+						});
+						$(document).ready(function(){
+						//Hide (Collapse) the toggle containers on load
+						$(".toggle_container").hide(); 
+						//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+						$(".trigger").click(function(){
+							$(this).toggleClass("active").next().slideToggle("slow");
+								return false; //Prevent the browser jump to the link anchor
+						});
+											
+					});
+				</script>
+				<!-- script-for-box -->
+				<!----->
+				<!-- banner-info -->
+				<div class="banner-info text-center">
+					<img src="images/me.jpg" class="img-responsive" alt=""/>
+					<h1>Dmitriy Kozimirov</h1>
+					<p>Веб-разработчик</p>
+					<ul>
+						<li><a href="#">Заказать работу</a></li>
+					</ul>
+				</div>
+				<!-- banner-info -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- about -->
+		<div id="about" class="about">
+			<div class="container">
+				<!-- head-section -->
+				<div class="head-section text-center">
+					<h2>Обо мне</h2>
+					<span></span>
+				</div>
+				<!-- head-section -->
+				<!-- about-grids -->
+				<div class="about-grids">
+					<div class="col-md-9 about-left-grid">
+						<h3>Дмитрий Козимиров</h3>
+						<span>HTML/CSS верстальщик</span>
+						<p>
+						Добрый день! Я - начинающий веб-разработчик. С удовольствием сверстаю ваши макеты любой сложности.</p>
+						<p>Мои навыки: валидная кроссбраузерная верстка на html5 и css3 с использованием Bootstrap, анимация элементов макета, адаптация сайтов под мобильные устройства, оптимизация скорости загрузки страниц, подключение и настройка CMS WoordPress.</p>
+						<p>Сделаю все быстро, качественно и недорого.</p>
+					</div>
+					<div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 about-right-grid">
+						<a class="popup-with-zoom-anim" href="#small-dialog"><img src="images/html-css.png" title="name" /></a>
+					</div>
+				</div>
+				<!-- about-grids -->
+			</div>
+		</div>
+		<!-- about -->
+		<!-- services -->
+		<div id="services" class="services">
+			<!-- head-section -->
+				<div class="head-section service-head text-center">
+					<h2>Мои услуги</h2>
+					<span></span>
+				</div>
+				<!-- head-section -->
+				<!-- services-grids -->
+				<div class="service-grids text-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="service-grid t-service-grid">
+									<span class="s-cion1"> </span>
+									<h3>Вёрстка сайтов по psd-макетам</h3>
+									<p>с использованием html5/css3 и Bootstrap. На выходе вы получите чистый валидный код, кроссбраузерную верстку и быструю загрузку страниц.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="service-grid t-service-grid">
+									<span class="s-cion2"> </span>
+									<h3>Доработка готовых <br>сайтов</h3>
+									<p>внесение изменений в код, добавление/удаление элементов, исправление ошибок</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="service-grid t-service-grid">
+									<span class="s-cion3"> </span>
+									<h3>Оптимизация скорости загрузки сайта </h3>
+									<p>Ускорение загрузки страниц за счет оптимизация кода и графики</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="service-grid">
+									<span class="s-cion4"> </span>
+									<h3>Доработка сайтов под мобильные устройства</h3>
+									<p>корректное отображение на устройствах с любым разрешением (мобильные, планшеты, мониторы)</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="service-grid">
+									<span class="s-cion5"> </span>
+									<h3>Настройка CMS <br> Wordpress</h3>
+									<p>добавление (удаление) модулей, настройка безопасности CMS</p>
+								</div>
+							</div><div class="col-md-4">
+								<div class="service-grid">
+									<span class="s-cion6"> </span>
+									<h3>Посадка HTML на CMS Wordpress</h3>
+									<p>подключение и настройка сверстанного шаблона к cms wordpress</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!-- services-grids -->
+		</div>
+		<!-- services -->
+		<!-- portfolio -->
+		<div id="port" class="portfolio">
+			<div class="container">
+				<!-- head-section -->
+				<div class="head-section text-center">
+					<h2>Портфолио</h2>
+					<h3>Мои работы</h3>
+					<span></span>
+				</div>
+				<!-- /head-section -->
+				<!-- portfolio-grids -->
+				<div class="portfolio-grids">
+					<div class="portfolio-grid about-grid">
+						<a href="images/port-pic.jpg" title="name" rel="title2">
+						    <div class="view view-first">
+                              <img src="images/port-pic.jpg" class="img-responsive" alt=""/>
+                              <div class="mask">
+                                <div class="info"><img src="images/hover-icon.png" alt=""/></div>
+                                <h3>Product Design</h3>
+                                <p>"LimeLight"</p>
+		                      </div>
+                            </a> </div>
+                    </div>
+					<div class="portfolio-grid about-grid">
+						<a href="images/port-pic1.jpg" title="name" rel="title2">
+						    <div class="view view-first">
+                              <img src="images/port-pic1.jpg" class="img-responsive" alt=""/>
+                              <div class="mask">
+                                <div class="info"><img src="images/hover-icon.png" alt=""/></div>
+                                <h3>Product Design</h3>
+                                <p>"LimeLight"</p>
+		                      </div>
+                            </a> </div>
+                    </div>
+					<div class="portfolio-grid about-grid">
+						<a href="images/port-pic2.jpg" title="name" rel="title2">
+						    <div class="view view-first">
+                              <img src="images/port-pic2.jpg" class="img-responsive" alt=""/>
+                              <div class="mask">
+                                <div class="info"><img src="images/hover-icon.png" alt=""/></div>
+                                <h3>Product Design</h3>
+                                <p>"LimeLight"</p>
+		                      </div>
+                            </a> </div>
+                    </div>
+					<div class="portfolio-grid about-grid">
+						<a href="images/port-pic3.jpg" title="name" rel="title2">
+						    <div class="view view-first">
+                              <img src="images/port-pic3.jpg" class="img-responsive" alt=""/>
+                              <div class="mask">
+                                <div class="info"><img src="images/hover-icon.png" alt=""/></div>
+                                <h3>Product Design</h3>
+                                <p>"LimeLight"</p>
+		                      </div>
+                            </a> </div>
+                    </div>
+					<div class="portfolio-grid about-grid">
+						<a href="images/port-pic5.jpg" title="name" rel="title2">
+						    <div class="view view-first">
+                              <img src="images/port-pic5.jpg" class="img-responsive" alt=""/>
+                              <div class="mask">
+                                <div class="info"><img src="images/hover-icon.png" alt=""/></div>
+                                <h3>Product Design</h3>
+                                <p>"LimeLight"</p>
+		                      </div>
+                            </a> </div>
+                    </div>
+					<div class="portfolio-grid about-grid">
+						<a href="images/port-pic6.jpg" title="name" rel="title2">
+						    <div class="view view-first">
+                              <img src="images/port-pic6.jpg" class="img-responsive" alt=""/>
+                              <div class="mask">
+                                <div class="info"><img src="images/hover-icon.png" alt=""/></div>
+                                <h3>Product Design</h3>
+                                <p>"LimeLight"</p>
+		                      </div>
+                            </a> </div>
+                    </div>
+					<div class="portfolio-grid about-grid">
+						<a href="images/port-pic7.jpg" title="name" rel="title2">
+						    <div class="view view-first">
+                              <img src="images/port-pic7.jpg" class="img-responsive" alt=""/>
+                              <div class="mask">
+                                <div class="info"><img src="images/hover-icon.png" alt=""/></div>
+                                <h3>Product Design</h3>
+                                <p>"LimeLight"</p>
+		                      </div>
+                            </a> </div>
+                    </div>
+					<div class="portfolio-grid about-grid">
+						<a href="images/port-pic1.jpg" title="name" rel="title2">
+						    <div class="view view-first">
+                              <img src="images/port-pic1.jpg" class="img-responsive" alt=""/>
+                              <div class="mask">
+                                <div class="info"><img src="images/hover-icon.png" alt=""/></div>
+                                <h3>Product Design</h3>
+                                <p>"LimeLight"</p>
+		                      </div>
+                            </a> </div>
+                    </div>
+				</div>
+				<!-- portfolio-grids -->
+			</div>
+		</div>
+		<!-- /portfolio -->
+		<!-- blog -->
+		
+		<!-- payment -->
+		<div id="payment" class="about">
+			<div class="container">
+				<!-- head-section -->
+				<div class="head-section text-center">
+					<h2>Способы оплаты</h2>
+					<span></span>
+				</div>
+				<!-- head-section -->
+				<!-- payment-grids -->
+				<div class="about-grids">
+					<div class="col-md-12 about-left-grid payment-grid">
+						<p class = "text-center">
+						Расплатиться за мои услуги можно следующим образом:</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 payment text-center">
+						<img src="images/webmoney.png" alt="webmoney" class="webmoney payment__img">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 payment text-center">
+						<img src="images/yandex-pay.png" alt="yandex деньги" class="yandex payment__img">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 payment text-center">
+						<img src="images/sberbank.png" alt="сбербанк" class="sberbank payment__img">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 payment text-center">
+						<img src="images/qiwi.png" alt="qiwi кошелек" class="qiwi payment__img">
+					</div>
+					</div>
+				<!-- payment-grids -->
+			</div>
+		</div>
+		<!-- payment -->
+		<!-- catch-on -->
+		<div id="contact" class="catch-on text-center">
+			<p>Захотелось заказать сайт? <a class="catch" href="contact.html">Связаться</a></p>
+		</div>
+		<!-- /catch-on -->
+		
+		<!-- footer -->
+		<div class="container">
+		
+			<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</div>
+		<!-- /footer -->
+	<!-- /container -->
+</body>
+</html>
+
