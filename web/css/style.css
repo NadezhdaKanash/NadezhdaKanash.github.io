@@ -414,6 +414,114 @@ a.boxclose{
    transition-delay: 0.1s;
 }
 
+/*-- contacts --*/
+.contacts {
+	background: url(../images/projects-bg.jpg) no-repeat 0px 0px;
+	min-height: 672px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding: 5em 0 5em;
+	position: relative;
+}
+.contacts h3{
+	color: #878a8e;
+    font-weight: 700;
+    margin: 0;
+    padding: 2em 0;
+}
+.contacts__vk, .contacts__skype, .contacts__mail, .contacts__phone {
+	margin-bottom: 2em;
+}
+
+.contacts__vk img, .contacts__skype img, .contacts__mail img, .contacts__phone img {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+}
+
+.contacts__vk a, .contacts__skype p, .contacts__mail p, .contacts__phone p {
+	float: left;
+	line-height: 40px;
+	color: #878a8e;
+	font-size: 1em;
+	font-weight: 400;
+    text-transform: uppercase;
+}
+#main_form_ajax {
+	padding: 2em;
+}
+.background-form {
+	background-color: #fff;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+#username, #usermail, #usertext  {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #2D3037;
+	z-index:2;
+	position: relative;
+	margin-bottom: 1.5em;
+}
+::-webkit-input-placeholder {color:#2D3037;}
+::-moz-placeholder          {color:#2D3037;}/* Firefox 19+ */
+:-moz-placeholder           {color:#2D3037;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#2D3037;}
+#submit_form {
+	border: none;
+	background-color: #88ccd8;
+	padding: 0.5em 1em;
+	position: relative;
+	z-ndex: 2;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+#submit_form:hover {
+	background-color: #58c4d7;
+}
+.modal-window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 200px;
+	margin: -100px auto auto -150px;
+	background-color: #88ccd8;
+	display: none;
+	z-index: 6;
+}
+.modal-window p {
+	margin-top: 50px;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.modal-window__close {
+	padding: 0.5em 1em;
+	background-color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #878a8e;
+
+}
+.modal-window__close:hover {
+	background-color: #878a8e;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+
 /*-- portfolio --*/
 .payment-grid {
 	margin-bottom: 0 !important;
@@ -429,6 +537,7 @@ a.boxclose{
 	max-width: 100%;
 	max-height: 100%;
 }
+
 
 /*-- projects --*/
 .projects{

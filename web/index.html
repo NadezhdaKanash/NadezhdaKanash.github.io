@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Portfolio a Personal Category Flat Bootstarp responsive Website Template| Home :: w3layouts</title>
+<title>Портфолио Дмитрия Козимирова</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Portfolio  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -63,7 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a class="scroll" href="#about">Обо мне</a></li>
 										<li><a class="scroll" href="#services">Услуги</a></li>
 										<li><a class="scroll" href="#payment">Способы оплаты</a></li>
-										<li><a class="scroll" href="#contact">Контакты</a></li>
+										<li><a class="scroll" href="#contacts">Контакты</a></li>
 										<div class="clear"> </div>
 									</ul>
 								</div>
@@ -338,10 +338,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<!-- payment -->
-		<!-- catch-on -->
-		<div id="contact" class="catch-on text-center">
-			<p>Захотелось заказать сайт? <a class="catch" href="contact.html">Связаться</a></p>
+
+		<!-- contacts -->
+		<div id="contacts" class="contacts">
+			<!-- head-section -->
+				<div class="head-section service-head text-center">
+					<h2>Контакты</h2>
+					<span></span>
+					<h3>Хотите заказать работу? У вас есть вопросы? Свяжитесь со мной!</h3>
+				</div>
+				<!-- head-section -->
+				<!-- contacts-grids -->
+				<div class="service-grids text-center">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 contacts__data">
+								<div class="contacts__phone">
+									<img src="images/phone.png" alt="Телефон">
+									<p>8-961-297-80-28</p>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="contacts__mail">
+									<img src="images/email.png" alt="E-mail">
+									<p>kozimirovdima23@gmail.com</p>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="contacts__skype">
+									<img src="images/skype.png" alt="Skype">
+									<p>Kozimirov</p>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="contacts__vk">
+									<img src="images/vk.png" alt="Vkontakte">
+									<a href = "https://vk.com/id276173493">Мой профиль</a>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="col-md-6 contacts__form">
+								<form id="main_form_ajax" action="#">
+								<div class = "background-form"></div>
+                <input type="hidden" name="from" value="Сообщение с сайта">
+                  <input id="username" type="text" name="user_name" placeholder="Ваше имя">
+                  <input id="usermail" type="email" name="user_email" required placeholder="E-mail">
+                  <textarea id="usertext" rows="3" name="user_message" placeholder="Сообщение"></textarea>
+                  <button id="submit_form" class="main_form_btn" type="submit">Отправить<span> &rarr;</span></button>
+                </form>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!-- contacts-grids -->
 		</div>
+		<!-- contacts -->
+
+		<!-- catch-on -->
+		<!-- <div id="contact" class="catch-on text-center">
+			<p>Захотелось заказать сайт? <a class="catch" href="contact.html">Связаться</a></p>
+		</div> -->
 		<!-- /catch-on -->
 		
 		<!-- footer -->
@@ -366,6 +420,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- /footer -->
 	<!-- /container -->
+	<!-- Отправка формы AJAX -->
+	<!-- Модальное окно для верхней формы -->
+    <div class="modal-window text-center" id="modal_thanks">
+      <p>Ваше сообщение успешно отправлено</p>
+      <a href="#self" class="modal-window__close" id = "modal-window__close">Закрыть</a>
+    </div>
+	<script>
+	  $(document).ready(function() {
+	      $("#main_form_ajax").submit(function() {
+	        $.ajax({
+	    type: "POST",
+	    url: "mail.php",
+	    data: $(this).serialize()
+	        }).done(function() {
+	    $(this).find("input").val("");
+	    $("#modal_thanks").show('slow');
+	    $("#main_form_ajax").trigger("reset");
+	        });
+	        return false;
+	      });
+	      $("#modal-window__close").click(function(){
+	      	$("#modal_thanks").hide();
+	      });
+	    });
+	  </script>
 </body>
 </html>
 
